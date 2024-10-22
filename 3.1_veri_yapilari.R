@@ -5,16 +5,19 @@
 # x <- c(1,2,3,4,5)
 x <- 1:5
 
-class(x)
+class(y)
 
 y <- c("merhaba", "yazilim","mehmet", "asli")
 
 z <- c(1,2,3,"merhaba",T)
-
+z
 
 x[1]
 y[1]
 y[-1]
+
+x[c(T,T,T,F,T)]
+
 y[c(1,4)]
 
 
@@ -50,6 +53,8 @@ data <- data.frame("ad-soyad"= "Kerem Aslı",
 data[1]
 data$ad.soyad
 
+#data[,]
+
 data[1,c(2,4)]
 
 
@@ -62,7 +67,8 @@ data[["araba"]]
 
 #5x3
 
-kkk <- matrix(c(1:15), ncol = 5)
+kkk <- matrix(1:15, ncol = 5)
+
 kkk2 <- matrix(c(1:15), nrow = 3)
 kkk2
 kkk2 <- matrix(c(1,2,"merhaba","yazilim"), nrow =2)
